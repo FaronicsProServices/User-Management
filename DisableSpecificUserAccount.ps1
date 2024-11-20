@@ -3,8 +3,10 @@
 Disable-LocalUser -Name "Username"
 
 # Example:
-# To enable the account named "JakeAdams", use:
-# Enable-LocalUser -Name "JakeAdams"
+# To disable the account named "JakeAdams", use:
+# Disable-LocalUser -Name "JakeAdams"
 
-# This command allows the specified user to log in again.
-# Keep in mind, you need admin privileges to run this command successfully.
+# Note:
+# - This cmdlet is part of the Microsoft.PowerShell.LocalAccounts module.
+# - Requires administrative privileges to execute.
+# - Disabling a user account prevents the user from logging in until re-enabled.
