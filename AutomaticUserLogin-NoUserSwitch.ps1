@@ -1,6 +1,6 @@
 # This script enables automatic logon for a specified user, disables user switch at login, 
 # and sets the monitor and standby timeouts to 0. It then forces a restart of the computer.
-$Username = "Username" 
+$Username = "Username" # Specify the user account as 'Domain\User' for domain environments or simply as 'Username' for local (workgroup) accounts.
 $Password = "Password" 
 $RegPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" 
 Set-ItemProperty -Path $RegPath -Name "AutoAdminLogon" -Value 1 
